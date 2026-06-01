@@ -1,5 +1,5 @@
 # Sistem Mikrokontroler (REC243002)
-> Bidang: Spesialisasi | Target Pemahaman: _Saya isi sendiri_
+> Bidang: Inti | Target Pemahaman: _Saya isi sendiri_
 
 ---
 
@@ -8,12 +8,22 @@
 ```mermaid
 mindmap
   root((SM))
-    Topik A
-      Subtopik A.1
-      Subtopik A.2
-    Topik B
-      Subtopik B.1
+    Arsitektur
+      Arsitektur Mikrokontroler (Harvard vs Von Neumann)
+    ARM
+      ARM Cortex-M / AVR Architecture
+    GPIO
+      GPIO & Interrupts
+    Timer
+      Timer & Counter
+    PWM
+      PWM & Motor Control
+    ADC
+      ADC & DAC
+    Topik Lain
+      (lihat notes/)
 ```
+
 
 > 💡 **Tips**: Edit mindmap di atas sesuai pemahamanmu. Tambahkan cabang baru saat mempelajari konsep tambahan.
 
@@ -21,52 +31,92 @@ mindmap
 
 ## 📌 Fokus Belajar Saat Ini
 
-- [ ] Topik prioritas pertama
-- [ ] Topik prioritas kedua
-- [ ] Latihan soal terkait
-- [ ] Review konsep yang belum dipahami
+- [ ] Review daftar topik di bawah
+- [ ] Pilih 1-2 topik untuk dipelajari minggu ini
+- [ ] Kerjakan latihan soal terkait
+- [ ] Dokumentasikan insight di notes/
+
+### Daftar Topik Lengkap
+
+- [ ] Arsitektur Mikrokontroler (Harvard vs Von Neumann)
+- [ ] ARM Cortex-M / AVR Architecture
+- [ ] GPIO & Interrupts
+- [ ] Timer & Counter
+- [ ] PWM & Motor Control
+- [ ] ADC & DAC
+- [ ] Serial Communication (UART, SPI, I2C)
+- [ ] Watchdog Timer & Low Power Modes
+- [ ] Embedded C Programming
+- [ ] RTOS Basics (FreeRTOS)
+
 
 ---
 
 ## 📐 Konsep & Rumus Kunci
 
-> Saya tulis rumus, derivasi, atau penjelasan konsep di sini.
+> Tulis penjelasan konsep dengan bahasamu sendiri di sini.
 
-### Contoh Format Rumus LaTeX
+| Nama | Rumus |
+|------|-------|
+| PWM Duty Cycle | `$$ D = \frac{T_{on}}{T_{total}} \times 100\% $$` |
+| ADC Resolution | `$$ V_{step} = \frac{V_{ref}}{2^n} $$` |
+| UART Baud Rate | `$$ Baud = \frac{f_{clk}}{16 \cdot UBRR} $$` |
+| SPI Clock | `$$ f_{SPI} = \frac{f_{clk}}{2 \cdot prescaler} $$` |
 
-$$ \int x \, dx = 0.5 x^2 + C $$
 
-$$ V = I \cdot R $$
+### Catatan Pemahaman
 
-$$ H(s) = \frac{Y(s)}{X(s)} = \frac{b_0}{a_n s^n + a_{n-1} s^{n-1} + \dots + a_0} $$
-
-### Catatan Konsep
-
-| Konsep | Penjelasan | Contoh Aplikasi |
-|--------|------------|-----------------|
-| ...    | ...        | ...             |
+| Konsep | Pemahaman Saya | Contoh Aplikasi | Masih Bingung? |
+|--------|----------------|-----------------|----------------|
+| ... | ... | ... | [ ] Ya / [x] Tidak |
 
 ---
 
 ## 🔧 Praktikum / Simulasi
 
-### Eksperimen Pertama: _Judul Percobaan_
+### Eksperimen yang Tersedia
 
-- [ ] Skema rangkaian / flowchart
-- [ ] Kode program / pseudocode
-- [ ] Hasil pengamatan & analisis
+- [ ] LED blinking & GPIO input
+- [ ] External interrupt dengan button
+- [ ] Timer interrupt & millis()
+- [ ] PWM untuk LED dimming & servo
+- [ ] ADC membaca sensor analog
+- [ ] UART communication dengan PC
 
-```python
-# Contoh kode simulasi
-def contoh_fungsi():
-    pass
+
+### Template Laporan Praktikum
+
+```markdown
+## Judul Percobaan: ________________
+
+### Tujuan
+- 
+
+### Alat & Bahan
+- 
+
+### Skema Rangkaian / Setup
+```mermaid
+graph LR
+  A[Input] --> B[Proses]
+  B --> C[Output]
 ```
+
+### Langkah Kerja
+1. 
+2. 
+3. 
 
 ### Hasil Pengamatan
 
-| Variabel | Nilai | Satuan | Keterangan |
-|----------|-------|--------|------------|
-| ...      | ...   | ...    | ...        |
+| No | Parameter | Nilai Teori | Nilai Praktik | Error (%) |
+|----|-----------|-------------|---------------|-----------|
+| 1  |           |             |               |           |
+
+### Analisis & Kesimpulan
+
+
+```
 
 ---
 
@@ -74,34 +124,53 @@ def contoh_fungsi():
 
 > Tempat mencatat: "Kenapa begini?", "Bagaimana jika...?", "Hubungan dengan topik X?"
 
-- 🔍 **Pertanyaan**: Mengapa tegangan output tidak stabil?
-- 💡 **Insight**: Ternyata ada pengaruh temperatur pada komponen semiconductor.
-- 🔗 **Koneksi ke topik lain**: Lihat juga di [Sensor & Aktuator](../../2024-2/REC242004-sensor-aktuator/README.md)
+### 💡 Insight Hari Ini
+- 
+
+### 🔍 Pertanyaan yang Belum Terjawab
+- 
+
+### 🔗 Koneksi ke Topik Lain
+- Lihat juga: [Matkul Terkait](../../README.md)
 
 ---
 
 ## 🔗 Referensi Saya
 
-### Buku
-- [ ] _Judul Buku_, Penulis, Tahun
+### Buku Wajib
+- [ ] Making Embedded Systems - Elecia White
+- [ ] ARM Cortex-M Microcontroller Manuals
+- [ ] Arduino & STM32 documentation
+- [ ] FreeRTOS kernel guide
 
-### Video
-- [ ] [Judul Video](URL)
 
-### Datasheet / Manual
-- [ ] [Nama Komponen](URL)
+### Video Tutorial
+- [ ] YouTube: Cari channel "GreatScott!", "EEVblog", "The Engineering Mindset"
+- [ ] Coursera / edX courses
 
-### Link Eksternal
-- [ ] [Artikel / Tutorial](URL)
+### Datasheet & Manual
+- [ ] [DigiKey](https://www.digikey.com/)
+- [ ] [Mouser](https://www.mouser.com/)
+- [ ] [AllAboutCircuits](https://www.allaboutcircuits.com/)
+
+### Simulator Online
+- [ ] [Falstad Circuit Simulator](https://falstad.com/circuit/)
+- [ ] [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+- [ ] [Tinkercad](https://www.tinkercad.com/)
 
 ---
 
 ## 🔄 Riwayat Update
 
-| Tanggal | Perubahan |
-|---------|-----------|
-| 2026-06-01 | Initial setup |
+| Tanggal | Progress | Catatan |
+|---------|----------|---------|
+| 2026-06-01 | Initial setup | Script auto-fill konten |
 
 ---
 
 **[⬅️ Kembali ke Dashboard Semester](../README.md)** | **[🏠 Ke Dashboard Utama](../../README.md)**
+
+---
+
+> 📝 **Catatan**: Template ini sudah diisi dengan konten spesifik Sistem Mikrokontroler. 
+> Edit sesuai kebutuhan, tambah catatan pribadi, dan lengkapi dengan pemahamanmu sendiri!

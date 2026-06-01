@@ -8,12 +8,22 @@
 ```mermaid
 mindmap
   root((GT))
-    Topik A
-      Subtopik A.1
-      Subtopik A.2
-    Topik B
-      Subtopik B.1
+    Standar
+      Standar Gambar Teknik (ISO, ANSI)
+    Alat
+      Alat Gambar Manual & CAD
+    Proyeksi
+      Proyeksi Ortogonal (First & Third Angle)
+    Proyeksi
+      Proyeksi Aksonometri (Isometri, Dimetri)
+    Potongan
+      Potongan & Penampang
+    Dimensioning
+      Dimensioning & Tolerancing
+    Topik Lain
+      (lihat notes/)
 ```
+
 
 > 💡 **Tips**: Edit mindmap di atas sesuai pemahamanmu. Tambahkan cabang baru saat mempelajari konsep tambahan.
 
@@ -21,52 +31,91 @@ mindmap
 
 ## 📌 Fokus Belajar Saat Ini
 
-- [ ] Topik prioritas pertama
-- [ ] Topik prioritas kedua
-- [ ] Latihan soal terkait
-- [ ] Review konsep yang belum dipahami
+- [ ] Review daftar topik di bawah
+- [ ] Pilih 1-2 topik untuk dipelajari minggu ini
+- [ ] Kerjakan latihan soal terkait
+- [ ] Dokumentasikan insight di notes/
+
+### Daftar Topik Lengkap
+
+- [ ] Standar Gambar Teknik (ISO, ANSI)
+- [ ] Alat Gambar Manual & CAD
+- [ ] Proyeksi Ortogonal (First & Third Angle)
+- [ ] Proyeksi Aksonometri (Isometri, Dimetri)
+- [ ] Potongan & Penampang
+- [ ] Dimensioning & Tolerancing
+- [ ] Surface Finish & Simbol Las
+- [ ] Assembly Drawing
+- [ ] Electrical Schematic Symbols
+- [ ] CAD 2D Dasar (AutoCAD/QCAD)
+
 
 ---
 
 ## 📐 Konsep & Rumus Kunci
 
-> Saya tulis rumus, derivasi, atau penjelasan konsep di sini.
+> Tulis penjelasan konsep dengan bahasamu sendiri di sini.
 
-### Contoh Format Rumus LaTeX
+| Nama | Rumus |
+|------|-------|
+| Skala | `$$ \text{Skala} = \frac{\text{Ukuran Gambar}}{\text{Ukuran Asli}} $$` |
+| Toleransi | `$$ D = d \pm \Delta d $$` |
+| Ra Surface | `$$ Ra = \frac{1}{l}\int_0^l |y(x)|dx $$` |
 
-$$ \int x \, dx = 0.5 x^2 + C $$
 
-$$ V = I \cdot R $$
+### Catatan Pemahaman
 
-$$ H(s) = \frac{Y(s)}{X(s)} = \frac{b_0}{a_n s^n + a_{n-1} s^{n-1} + \dots + a_0} $$
-
-### Catatan Konsep
-
-| Konsep | Penjelasan | Contoh Aplikasi |
-|--------|------------|-----------------|
-| ...    | ...        | ...             |
+| Konsep | Pemahaman Saya | Contoh Aplikasi | Masih Bingung? |
+|--------|----------------|-----------------|----------------|
+| ... | ... | ... | [ ] Ya / [x] Tidak |
 
 ---
 
 ## 🔧 Praktikum / Simulasi
 
-### Eksperimen Pertama: _Judul Percobaan_
+### Eksperimen yang Tersedia
 
-- [ ] Skema rangkaian / flowchart
-- [ ] Kode program / pseudocode
-- [ ] Hasil pengamatan & analisis
+- [ ] Menggambar proyeksi ortogonal manual
+- [ ] Isometric drawing
+- [ ] Sectional views
+- [ ] Dimensioning practice
+- [ ] Assembly drawing komponen mekanik
+- [ ] Electrical schematic diagram
 
-```python
-# Contoh kode simulasi
-def contoh_fungsi():
-    pass
+
+### Template Laporan Praktikum
+
+```markdown
+## Judul Percobaan: ________________
+
+### Tujuan
+- 
+
+### Alat & Bahan
+- 
+
+### Skema Rangkaian / Setup
+```mermaid
+graph LR
+  A[Input] --> B[Proses]
+  B --> C[Output]
 ```
+
+### Langkah Kerja
+1. 
+2. 
+3. 
 
 ### Hasil Pengamatan
 
-| Variabel | Nilai | Satuan | Keterangan |
-|----------|-------|--------|------------|
-| ...      | ...   | ...    | ...        |
+| No | Parameter | Nilai Teori | Nilai Praktik | Error (%) |
+|----|-----------|-------------|---------------|-----------|
+| 1  |           |             |               |           |
+
+### Analisis & Kesimpulan
+
+
+```
 
 ---
 
@@ -74,34 +123,53 @@ def contoh_fungsi():
 
 > Tempat mencatat: "Kenapa begini?", "Bagaimana jika...?", "Hubungan dengan topik X?"
 
-- 🔍 **Pertanyaan**: Mengapa tegangan output tidak stabil?
-- 💡 **Insight**: Ternyata ada pengaruh temperatur pada komponen semiconductor.
-- 🔗 **Koneksi ke topik lain**: Lihat juga di [Sensor & Aktuator](../../2024-2/REC242004-sensor-aktuator/README.md)
+### 💡 Insight Hari Ini
+- 
+
+### 🔍 Pertanyaan yang Belum Terjawab
+- 
+
+### 🔗 Koneksi ke Topik Lain
+- Lihat juga: [Matkul Terkait](../../README.md)
 
 ---
 
 ## 🔗 Referensi Saya
 
-### Buku
-- [ ] _Judul Buku_, Penulis, Tahun
+### Buku Wajib
+- [ ] Technical Drawing - Giesecke et al.
+- [ ] Engineering Drawing - N.D. Bhatt
+- [ ] ISO 128: Technical Drawings
+- [ ] AutoCAD tutorials
 
-### Video
-- [ ] [Judul Video](URL)
 
-### Datasheet / Manual
-- [ ] [Nama Komponen](URL)
+### Video Tutorial
+- [ ] YouTube: Cari channel "GreatScott!", "EEVblog", "The Engineering Mindset"
+- [ ] Coursera / edX courses
 
-### Link Eksternal
-- [ ] [Artikel / Tutorial](URL)
+### Datasheet & Manual
+- [ ] [DigiKey](https://www.digikey.com/)
+- [ ] [Mouser](https://www.mouser.com/)
+- [ ] [AllAboutCircuits](https://www.allaboutcircuits.com/)
+
+### Simulator Online
+- [ ] [Falstad Circuit Simulator](https://falstad.com/circuit/)
+- [ ] [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+- [ ] [Tinkercad](https://www.tinkercad.com/)
 
 ---
 
 ## 🔄 Riwayat Update
 
-| Tanggal | Perubahan |
-|---------|-----------|
-| 2026-06-01 | Initial setup |
+| Tanggal | Progress | Catatan |
+|---------|----------|---------|
+| 2026-06-01 | Initial setup | Script auto-fill konten |
 
 ---
 
 **[⬅️ Kembali ke Dashboard Semester](../README.md)** | **[🏠 Ke Dashboard Utama](../../README.md)**
+
+---
+
+> 📝 **Catatan**: Template ini sudah diisi dengan konten spesifik Gambar Teknik. 
+> Edit sesuai kebutuhan, tambah catatan pribadi, dan lengkapi dengan pemahamanmu sendiri!
