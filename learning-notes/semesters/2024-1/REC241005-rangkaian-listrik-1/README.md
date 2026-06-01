@@ -1,5 +1,5 @@
 # Rangkaian Listrik 1 (REC241005)
-> Bidang: Inti | Target Pemahaman: _Saya isi sendiri_
+> Bidang: Dasar | Target Pemahaman: _Saya isi sendiri_
 
 ---
 
@@ -7,13 +7,23 @@
 
 ```mermaid
 mindmap
-  root((RL))
-    Topik A
-      Subtopik A.1
-      Subtopik A.2
-    Topik B
-      Subtopik B.1
+  root((RL1))
+    Elemen
+      Elemen Rangkaian: Sumber & Beban
+    Hukum
+      Hukum Ohm & Hukum Kirchhoff
+    Rangkaian
+      Rangkaian Seri & Paralel
+    Transformasi
+      Transformasi Sumber
+    Analisis
+      Analisis Node (Nodal Analysis)
+    Analisis
+      Analisis Mesh (Mesh Analysis)
+    Topik Lain
+      (lihat notes/)
 ```
+
 
 > 💡 **Tips**: Edit mindmap di atas sesuai pemahamanmu. Tambahkan cabang baru saat mempelajari konsep tambahan.
 
@@ -21,52 +31,96 @@ mindmap
 
 ## 📌 Fokus Belajar Saat Ini
 
-- [ ] Topik prioritas pertama
-- [ ] Topik prioritas kedua
-- [ ] Latihan soal terkait
-- [ ] Review konsep yang belum dipahami
+- [ ] Review daftar topik di bawah
+- [ ] Pilih 1-2 topik untuk dipelajari minggu ini
+- [ ] Kerjakan latihan soal terkait
+- [ ] Dokumentasikan insight di notes/
+
+### Daftar Topik Lengkap
+
+- [ ] Elemen Rangkaian: Sumber & Beban
+- [ ] Hukum Ohm & Hukum Kirchhoff
+- [ ] Rangkaian Seri & Paralel
+- [ ] Transformasi Sumber
+- [ ] Analisis Node (Nodal Analysis)
+- [ ] Analisis Mesh (Mesh Analysis)
+- [ ] Teorema Thevenin & Norton
+- [ ] Teorema Superposisi
+- [ ] Transfer Daya Maksimum
+- [ ] Rangkaian Orde Pertama (RC, RL)
+
 
 ---
 
 ## 📐 Konsep & Rumus Kunci
 
-> Saya tulis rumus, derivasi, atau penjelasan konsep di sini.
+> Tulis penjelasan konsep dengan bahasamu sendiri di sini.
 
-### Contoh Format Rumus LaTeX
+| Nama | Rumus |
+|------|-------|
+| Hukum Ohm | `$$ V = I \cdot R $$` |
+| KCL | `$$ \sum I_{masuk} = \sum I_{keluar} $$` |
+| KVL | `$$ \sum V = 0 $$` |
+| Resistor Seri | `$$ R_{eq} = R_1 + R_2 + \dots $$` |
+| Resistor Paralel | `$$ \frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots $$` |
+| Thevenin | `$$ V_{th}, R_{th} $$` |
+| Norton | `$$ I_N, R_N = R_{th} $$` |
+| Waktu RC | `$$ \tau = RC $$` |
 
-$$ \int x \, dx = 0.5 x^2 + C $$
 
-$$ V = I \cdot R $$
+### Catatan Pemahaman
 
-$$ H(s) = \frac{Y(s)}{X(s)} = \frac{b_0}{a_n s^n + a_{n-1} s^{n-1} + \dots + a_0} $$
-
-### Catatan Konsep
-
-| Konsep | Penjelasan | Contoh Aplikasi |
-|--------|------------|-----------------|
-| ...    | ...        | ...             |
+| Konsep | Pemahaman Saya | Contoh Aplikasi | Masih Bingung? |
+|--------|----------------|-----------------|----------------|
+| ... | ... | ... | [ ] Ya / [x] Tidak |
 
 ---
 
 ## 🔧 Praktikum / Simulasi
 
-### Eksperimen Pertama: _Judul Percobaan_
+### Eksperimen yang Tersedia
 
-- [ ] Skema rangkaian / flowchart
-- [ ] Kode program / pseudocode
-- [ ] Hasil pengamatan & analisis
+- [ ] Verifikasi hukum Ohm dan Kirchhoff
+- [ ] Analisis rangkaian seri-paralel
+- [ ] Eksperimen teorema Thevenin-Norton
+- [ ] Superposisi pada rangkaian multi-sumber
+- [ ] Respons transient RC dan RL
+- [ ] Simulasi dengan LTspice/Multisim
 
-```python
-# Contoh kode simulasi
-def contoh_fungsi():
-    pass
+
+### Template Laporan Praktikum
+
+```markdown
+## Judul Percobaan: ________________
+
+### Tujuan
+- 
+
+### Alat & Bahan
+- 
+
+### Skema Rangkaian / Setup
+```mermaid
+graph LR
+  A[Input] --> B[Proses]
+  B --> C[Output]
 ```
+
+### Langkah Kerja
+1. 
+2. 
+3. 
 
 ### Hasil Pengamatan
 
-| Variabel | Nilai | Satuan | Keterangan |
-|----------|-------|--------|------------|
-| ...      | ...   | ...    | ...        |
+| No | Parameter | Nilai Teori | Nilai Praktik | Error (%) |
+|----|-----------|-------------|---------------|-----------|
+| 1  |           |             |               |           |
+
+### Analisis & Kesimpulan
+
+
+```
 
 ---
 
@@ -74,34 +128,53 @@ def contoh_fungsi():
 
 > Tempat mencatat: "Kenapa begini?", "Bagaimana jika...?", "Hubungan dengan topik X?"
 
-- 🔍 **Pertanyaan**: Mengapa tegangan output tidak stabil?
-- 💡 **Insight**: Ternyata ada pengaruh temperatur pada komponen semiconductor.
-- 🔗 **Koneksi ke topik lain**: Lihat juga di [Sensor & Aktuator](../../2024-2/REC242004-sensor-aktuator/README.md)
+### 💡 Insight Hari Ini
+- 
+
+### 🔍 Pertanyaan yang Belum Terjawab
+- 
+
+### 🔗 Koneksi ke Topik Lain
+- Lihat juga: [Matkul Terkait](../../README.md)
 
 ---
 
 ## 🔗 Referensi Saya
 
-### Buku
-- [ ] _Judul Buku_, Penulis, Tahun
+### Buku Wajib
+- [ ] Electric Circuits - Nilsson & Riedel
+- [ ] Engineering Circuit Analysis - Hayt & Kemmerly
+- [ ] Fundamentals of Electric Circuits - Alexander & Sadiku
+- [ ] All About Circuits (online)
 
-### Video
-- [ ] [Judul Video](URL)
 
-### Datasheet / Manual
-- [ ] [Nama Komponen](URL)
+### Video Tutorial
+- [ ] YouTube: Cari channel "GreatScott!", "EEVblog", "The Engineering Mindset"
+- [ ] Coursera / edX courses
 
-### Link Eksternal
-- [ ] [Artikel / Tutorial](URL)
+### Datasheet & Manual
+- [ ] [DigiKey](https://www.digikey.com/)
+- [ ] [Mouser](https://www.mouser.com/)
+- [ ] [AllAboutCircuits](https://www.allaboutcircuits.com/)
+
+### Simulator Online
+- [ ] [Falstad Circuit Simulator](https://falstad.com/circuit/)
+- [ ] [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+- [ ] [Tinkercad](https://www.tinkercad.com/)
 
 ---
 
 ## 🔄 Riwayat Update
 
-| Tanggal | Perubahan |
-|---------|-----------|
-| 2026-06-01 | Initial setup |
+| Tanggal | Progress | Catatan |
+|---------|----------|---------|
+| 2026-06-01 | Initial setup | Script auto-fill konten |
 
 ---
 
 **[⬅️ Kembali ke Dashboard Semester](../README.md)** | **[🏠 Ke Dashboard Utama](../../README.md)**
+
+---
+
+> 📝 **Catatan**: Template ini sudah diisi dengan konten spesifik Rangkaian Listrik 1. 
+> Edit sesuai kebutuhan, tambah catatan pribadi, dan lengkapi dengan pemahamanmu sendiri!

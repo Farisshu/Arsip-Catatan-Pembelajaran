@@ -7,13 +7,23 @@
 
 ```mermaid
 mindmap
-  root((SA))
-    Topik A
-      Subtopik A.1
-      Subtopik A.2
-    Topik B
-      Subtopik B.1
+  root((S&A))
+    Prinsip
+      Prinsip Dasar Sensor & Aktuator
+    Karakteristik
+      Karakteristik Sensor (Akurasi, Presisi, Resolusi)
+    Sensor
+      Sensor Suhu (Termokopel, RTD, Thermistor, IC)
+    Sensor
+      Sensor Cahaya (LDR, Photodiode, Phototransistor)
+    Sensor
+      Sensor Tekanan & Strain Gauge
+    Sensor
+      Sensor Proximity & Ultrasonik
+    Topik Lain
+      (lihat notes/)
 ```
+
 
 > 💡 **Tips**: Edit mindmap di atas sesuai pemahamanmu. Tambahkan cabang baru saat mempelajari konsep tambahan.
 
@@ -21,52 +31,93 @@ mindmap
 
 ## 📌 Fokus Belajar Saat Ini
 
-- [ ] Topik prioritas pertama
-- [ ] Topik prioritas kedua
-- [ ] Latihan soal terkait
-- [ ] Review konsep yang belum dipahami
+- [ ] Review daftar topik di bawah
+- [ ] Pilih 1-2 topik untuk dipelajari minggu ini
+- [ ] Kerjakan latihan soal terkait
+- [ ] Dokumentasikan insight di notes/
+
+### Daftar Topik Lengkap
+
+- [ ] Prinsip Dasar Sensor & Aktuator
+- [ ] Karakteristik Sensor (Akurasi, Presisi, Resolusi)
+- [ ] Sensor Suhu (Termokopel, RTD, Thermistor, IC)
+- [ ] Sensor Cahaya (LDR, Photodiode, Phototransistor)
+- [ ] Sensor Tekanan & Strain Gauge
+- [ ] Sensor Proximity & Ultrasonik
+- [ ] Sensor Posisi & Encoder
+- [ ] Aktuator: Motor DC, Servo, Stepper
+- [ ] Aktuator: Solenoid, Relay, Pneumatik
+- [ ] Signal Conditioning & Interface
+
 
 ---
 
 ## 📐 Konsep & Rumus Kunci
 
-> Saya tulis rumus, derivasi, atau penjelasan konsep di sini.
+> Tulis penjelasan konsep dengan bahasamu sendiri di sini.
 
-### Contoh Format Rumus LaTeX
+| Nama | Rumus |
+|------|-------|
+| Sensitivitas | `$$ S = \frac{\Delta V_{out}}{\Delta Input} $$` |
+| Termokopel | `$$ V = \alpha(T_{hot} - T_{cold}) $$` |
+| Strain Gauge | `$$ \frac{\Delta R}{R} = G \cdot \epsilon $$` |
+| Ultrasonik Distance | `$$ d = \frac{v \cdot t}{2} $$` |
+| Stepper Steps | `$$ \text{Steps/rev} = \frac{360^\circ}{\text{step angle}} $$` |
 
-$$ \int x \, dx = 0.5 x^2 + C $$
 
-$$ V = I \cdot R $$
+### Catatan Pemahaman
 
-$$ H(s) = \frac{Y(s)}{X(s)} = \frac{b_0}{a_n s^n + a_{n-1} s^{n-1} + \dots + a_0} $$
-
-### Catatan Konsep
-
-| Konsep | Penjelasan | Contoh Aplikasi |
-|--------|------------|-----------------|
-| ...    | ...        | ...             |
+| Konsep | Pemahaman Saya | Contoh Aplikasi | Masih Bingung? |
+|--------|----------------|-----------------|----------------|
+| ... | ... | ... | [ ] Ya / [x] Tidak |
 
 ---
 
 ## 🔧 Praktikum / Simulasi
 
-### Eksperimen Pertama: _Judul Percobaan_
+### Eksperimen yang Tersedia
 
-- [ ] Skema rangkaian / flowchart
-- [ ] Kode program / pseudocode
-- [ ] Hasil pengamatan & analisis
+- [ ] Kalibrasi sensor suhu
+- [ ] Light meter dengan LDR/photodiode
+- [ ] Load cell dengan strain gauge
+- [ ] Distance measurement dengan HC-SR04
+- [ ] Control motor DC dengan PWM
+- [ ] Control servo dengan Arduino
 
-```python
-# Contoh kode simulasi
-def contoh_fungsi():
-    pass
+
+### Template Laporan Praktikum
+
+```markdown
+## Judul Percobaan: ________________
+
+### Tujuan
+- 
+
+### Alat & Bahan
+- 
+
+### Skema Rangkaian / Setup
+```mermaid
+graph LR
+  A[Input] --> B[Proses]
+  B --> C[Output]
 ```
+
+### Langkah Kerja
+1. 
+2. 
+3. 
 
 ### Hasil Pengamatan
 
-| Variabel | Nilai | Satuan | Keterangan |
-|----------|-------|--------|------------|
-| ...      | ...   | ...    | ...        |
+| No | Parameter | Nilai Teori | Nilai Praktik | Error (%) |
+|----|-----------|-------------|---------------|-----------|
+| 1  |           |             |               |           |
+
+### Analisis & Kesimpulan
+
+
+```
 
 ---
 
@@ -74,34 +125,52 @@ def contoh_fungsi():
 
 > Tempat mencatat: "Kenapa begini?", "Bagaimana jika...?", "Hubungan dengan topik X?"
 
-- 🔍 **Pertanyaan**: Mengapa tegangan output tidak stabil?
-- 💡 **Insight**: Ternyata ada pengaruh temperatur pada komponen semiconductor.
-- 🔗 **Koneksi ke topik lain**: Lihat juga di [Sensor & Aktuator](../../2024-2/REC242004-sensor-aktuator/README.md)
+### 💡 Insight Hari Ini
+- 
+
+### 🔍 Pertanyaan yang Belum Terjawab
+- 
+
+### 🔗 Koneksi ke Topik Lain
+- Lihat juga: [Matkul Terkait](../../README.md)
 
 ---
 
 ## 🔗 Referensi Saya
 
-### Buku
-- [ ] _Judul Buku_, Penulis, Tahun
+### Buku Wajib
+- [ ] Measurement and Instrumentation - Morris
+- [ ] Sensors and Actuators for Mechatronics - Barthelmes
+- [ ] Datasheet berbagai sensor (DigiKey, Mouser)
 
-### Video
-- [ ] [Judul Video](URL)
 
-### Datasheet / Manual
-- [ ] [Nama Komponen](URL)
+### Video Tutorial
+- [ ] YouTube: Cari channel "GreatScott!", "EEVblog", "The Engineering Mindset"
+- [ ] Coursera / edX courses
 
-### Link Eksternal
-- [ ] [Artikel / Tutorial](URL)
+### Datasheet & Manual
+- [ ] [DigiKey](https://www.digikey.com/)
+- [ ] [Mouser](https://www.mouser.com/)
+- [ ] [AllAboutCircuits](https://www.allaboutcircuits.com/)
+
+### Simulator Online
+- [ ] [Falstad Circuit Simulator](https://falstad.com/circuit/)
+- [ ] [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+- [ ] [Tinkercad](https://www.tinkercad.com/)
 
 ---
 
 ## 🔄 Riwayat Update
 
-| Tanggal | Perubahan |
-|---------|-----------|
-| 2026-06-01 | Initial setup |
+| Tanggal | Progress | Catatan |
+|---------|----------|---------|
+| 2026-06-01 | Initial setup | Script auto-fill konten |
 
 ---
 
 **[⬅️ Kembali ke Dashboard Semester](../README.md)** | **[🏠 Ke Dashboard Utama](../../README.md)**
+
+---
+
+> 📝 **Catatan**: Template ini sudah diisi dengan konten spesifik Sensor & Aktuator. 
+> Edit sesuai kebutuhan, tambah catatan pribadi, dan lengkapi dengan pemahamanmu sendiri!
