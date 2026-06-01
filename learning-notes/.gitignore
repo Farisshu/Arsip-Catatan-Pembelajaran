@@ -1,0 +1,72 @@
+# === Files to Ignore for Engineering Learning Notes ===
+
+# Binary & Document files (keep source, not compiled/exported)
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.xlsx
+*.xls
+
+# Build artifacts
+build/
+dist/
+*.o
+*.so
+*.exe
+*.out
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.env
+*.egg-info/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs & temporary files
+*.log
+tmp/
+temp/
+*.tmp
+
+# Large files (>50MB should be stored elsewhere)
+*.iso
+*.img
+*.bin
+*.hex
+firmware/*.bin
+firmware/*.hex
+
+# Simulation project files (keep only reports, not entire projects)
+*.psproj
+*.asc
+*.raw
+*.trn
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Secrets & credentials (important!)
+*.key
+*.pem
+credentials.json
+secrets.yaml
+.env.local
