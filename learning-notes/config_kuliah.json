@@ -1,0 +1,113 @@
+{
+  "2024-1": [
+    {
+      "kode": "REC241001",
+      "nama": "Fisika Elektronika",
+      "kategori": "Dasar"
+    },
+    {
+      "kode": "REC241002",
+      "nama": "Praktikum Fisika Elektronika",
+      "kategori": "Praktikum"
+    },
+    {
+      "kode": "REC241003",
+      "nama": "Matematika 1",
+      "kategori": "Dasar"
+    },
+    {
+      "kode": "REC241004",
+      "nama": "K3 (Keselamatan & Kesehatan Kerja)",
+      "kategori": "Dasar"
+    },
+    {
+      "kode": "REC241005",
+      "nama": "Rangkaian Listrik 1",
+      "kategori": "Inti"
+    },
+    {
+      "kode": "REC241006",
+      "nama": "Praktikum Rangkaian Listrik 1",
+      "kategori": "Praktikum"
+    },
+    {
+      "kode": "REC241007",
+      "nama": "Bengkel Mekanik",
+      "kategori": "Praktikum"
+    },
+    {
+      "kode": "REC241008",
+      "nama": "Algoritma Pemrograman",
+      "kategori": "Dasar"
+    }
+  ],
+  "2024-2": [
+    {
+      "kode": "REC242001",
+      "nama": "Rangkaian Listrik 2",
+      "kategori": "Inti"
+    },
+    {
+      "kode": "REC242002",
+      "nama": "Elektronika Analog 1",
+      "kategori": "Inti"
+    },
+    {
+      "kode": "REC242003",
+      "nama": "Bengkel Elektronika",
+      "kategori": "Praktikum"
+    },
+    {
+      "kode": "REC242004",
+      "nama": "Sensor & Aktuator",
+      "kategori": "Inti"
+    },
+    {
+      "kode": "REC242005",
+      "nama": "Teknik Digital 1",
+      "kategori": "Inti"
+    },
+    {
+      "kode": "REC242006",
+      "nama": "Matematika 2",
+      "kategori": "Dasar"
+    },
+    {
+      "kode": "REC242007",
+      "nama": "Gambar Teknik",
+      "kategori": "Dasar"
+    }
+  ],
+  "2025-1": [
+    {
+      "kode": "REC243001",
+      "nama": "Elektronika Analog 2",
+      "kategori": "Inti"
+    },
+    {
+      "kode": "REC243002",
+      "nama": "Sistem Mikrokontroler",
+      "kategori": "Spesialisasi"
+    },
+    {
+      "kode": "REC243003",
+      "nama": "Instrumentasi Industri",
+      "kategori": "Spesialisasi"
+    },
+    {
+      "kode": "REC243004",
+      "nama": "PLC",
+      "kategori": "Spesialisasi"
+    },
+    {
+      "kode": "REC243005",
+      "nama": "Sistem Kendali Kontinyu",
+      "kategori": "Spesialisasi"
+    },
+    {
+      "kode": "REC243006",
+      "nama": "Elektronika Digital",
+      "kategori": "Inti"
+    }
+  ]
+}
